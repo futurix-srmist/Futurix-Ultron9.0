@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cac's Arcade</title>
+  <link rel="stylesheet" href="/static/arcade.css?v=2">
+</head>
+<body>
+
+<!-- ================= NAME SCREEN ================= -->
+<div id="nameScreen">
+  <h1 id="arcadeTitle">Cac's Arcade</h1>
+
+  <div class="nameBox">
+    <input
+      id="nameInput"
+      placeholder="Enter your name"
+      maxlength="16"
+      autocomplete="off"
+    />
+    <button id="startBtn">Enter Arcade</button>
+  </div>
+</div>
+
+<!-- ================= ARCADE LOBBY ================= -->
+<div id="lobby" class="hidden">
+
+  <div class="crt">
+    <div class="crt-inner">
+
+      <h1 class="crt-title">Cac's Arcade</h1>
+
+      <div class="stats">
+        <div>Total online: <b id="totalOnline">0</b></div>
+        <div>In lobby: <b id="lobbyCount">0</b></div>
+      </div>
+
+      <div id="games" class="games"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="/static/arcade.js"></script>
+</body>
+</html>
