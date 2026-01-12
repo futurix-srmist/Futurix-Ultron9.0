@@ -37,7 +37,6 @@ const Prizes = dynamic(() => import("@/components/sections/prizes"), {
   loading: () => <SectionLoader />
 })
 
-
 // Load cyber cursor only on client side (desktop only)
 const CyberCursor = dynamic(() => import("@/components/ui/cyber-cursor"), {
   ssr: false,
@@ -71,12 +70,15 @@ export default function Home() {
         {/* <Highlights /> */}
         <Events />
         {/* <Competitions /> */}
-        <Gallery />
-        <Prizes />
+        
+        {/* Section order swapped here as requested */}
+        <Prizes />   {/* Prize Pool & Recognition */}
+        <Gallery />  {/* Past Memories */}
+        
         <Team />
 
         {/* <FAQ /> */}
-        {/*<Registration />*/}
+        {/* <Registration /> */}
         <Footer />
       </main>
       <ScrollToTop />
