@@ -34,7 +34,7 @@ const timelineEvents: TimelineEvent[] = [
     day: "Pre-Event",
     date: "23 Jan 2026",
     time: "11:59 PM",
-    title: "Registration Deadline",
+    title: "Registration's Deadline",
     description:
       "Registered teams submit their idea proposals using the standardized PPT template. Submissions are evaluated on innovation, feasibility, relevance, and clarity. Top 100 teams are shortlisted.",
     icon: FileText,
